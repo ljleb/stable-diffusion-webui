@@ -1,0 +1,44 @@
+2023-04-20 15:15:49,300 | INFO | D:\src\stable-diffusion-webui\setup.py | Python 3.10.9 on Windows
+2023-04-20 15:15:49,368 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Repository update time: Thu Apr 20 12:29:54 2023
+2023-04-20 15:15:49,368 | INFO | D:\src\stable-diffusion-webui\setup.py | Running setup
+2023-04-20 15:15:49,370 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Args: {'f': False, 'ui_settings_file': 'D:\\src\\stable-diffusion-webui\\config.json', 'ui_config_file': 'D:\\src\\stable-diffusion-webui\\ui-config.json', 'config': 'D:\\src\\stable-diffusion-webui\\configs\\v1-inference.yaml', 'theme': None, 'medvram': False, 'lowvram': False, 'lowram': False, 'ckpt': 'D:\\src\\stable-diffusion-webui\\model.ckpt', 'vae': None, 'data_dir': 'D:\\src\\stable-diffusion-webui', 'allow_code': True, 'share': False, 'enable_insecure': False, 'use_cpu': [], 'listen': False, 'port': None, 'hide_ui_dir_config': False, 'freeze_settings': False, 'gradio_auth': None, 'gradio_auth_path': None, 'autolaunch': False, 'disable_console_progressbars': True, 'disable_safe_unpickle': True, 'api_auth': None, 'api_log': True, 'device_id': None, 'cors_origins': None, 'cors_regex': None, 'tls_keyfile': None, 'tls_certfile': None, 'server_name': None, 'no_hashing': False, 'no_download_sd_model': False, 'profile': False, 'disable_queue': False, 'debug': False, 'reset': False, 'upgrade': False, 'noupdate': False, 'skip_requirements': False, 'skip_extensions': False, 'skip_git': False}
+2023-04-20 15:15:49,400 | INFO | D:\src\stable-diffusion-webui\setup.py | Version: 752b91d3 Thu Apr 20 12:29:54 2023 -0400
+2023-04-20 15:15:49,706 | INFO | D:\src\stable-diffusion-webui\setup.py | Updating Wiki
+2023-04-20 15:15:53,781 | ERROR | D:\src\stable-diffusion-webui\setup.py | Error running git with args: -C "D:\src\stable-diffusion-webui\wiki" pull --rebase --autostash
+2023-04-20 15:15:53,783 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Git output: Auto-merging modules/shared.py
+Auto-merging modules/ui.py
+CONFLICT (content): Merge conflict in modules/ui.py
+Auto-merging webui.py
+
+From https://github.com/AUTOMATIC1111/stable-diffusion-webui
+ * [new branch]        gradio-3-22        -> origin/gradio-3-22
+ * [new branch]        img2img-scale-by   -> origin/img2img-scale-by
+ * [new branch]        lora_inplace       -> origin/lora_inplace
+ * [new branch]        serve-css-as-files -> origin/serve-css-as-files
+Rebasing (1/384)error: could not apply c9647c8d... Support Gradio's theme API
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply c9647c8d... Support Gradio's theme API
+2023-04-20 15:15:53,814 | ERROR | D:\src\stable-diffusion-webui\setup.py | Error running git with args: -C "D:\src\stable-diffusion-webui\wiki" branch
+2023-04-20 15:15:53,816 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Git output: fatal: cannot change to 'D:\src\stable-diffusion-webui\wiki': No such file or directory
+2023-04-20 15:15:53,860 | ERROR | D:\src\stable-diffusion-webui\setup.py | Error running git with args: -C "D:\src\stable-diffusion-webui\wiki\origin-wiki" branch
+2023-04-20 15:15:53,862 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Git output: fatal: cannot change to 'D:\src\stable-diffusion-webui\wiki\origin-wiki': No such file or directory
+2023-04-20 15:15:53,862 | WARNING | D:\src\stable-diffusion-webui\setup.py | Unknown branch for: D:\src\stable-diffusion-webui\wiki\origin-wiki
+2023-04-20 15:15:53,892 | ERROR | D:\src\stable-diffusion-webui\setup.py | Error running git with args: -C "D:\src\stable-diffusion-webui\wiki\origin-wiki" pull --rebase --autostash
+2023-04-20 15:15:53,894 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Git output: fatal: cannot change to 'D:\src\stable-diffusion-webui\wiki\origin-wiki': No such file or directory
+2023-04-20 15:15:53,923 | ERROR | D:\src\stable-diffusion-webui\setup.py | Error running git with args: -C "D:\src\stable-diffusion-webui\wiki\origin-wiki" branch
+2023-04-20 15:15:53,925 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Git output: fatal: cannot change to 'D:\src\stable-diffusion-webui\wiki\origin-wiki': No such file or directory
+2023-04-20 15:15:53,925 | INFO | D:\src\stable-diffusion-webui\setup.py | Installing requirements
+2023-04-20 15:15:53,929 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version found: blendmodes 2022
+2023-04-20 15:15:53,929 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version found: accelerate 0.12.0
+2023-04-20 15:15:53,929 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version found: basicsr 1.4.2
+2023-04-20 15:15:53,929 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version found: fonts 0.0.3
+2023-04-20 15:15:53,929 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version found: font-roboto 0.0.1
+2023-04-20 15:15:53,930 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version found: gfpgan 1.3.8
+2023-04-20 15:15:53,930 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version found: gradio 3.23.0
+2023-04-20 15:15:53,930 | WARNING | D:\src\stable-diffusion-webui\setup.py | Package wrong version: gradio 3.23.0 required 3.23
+2023-04-20 15:15:53,932 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Running pip: install --upgrade gradio==3.23
+2023-04-20 15:15:55,913 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Package version not found: invisible-watermark
+2023-04-20 15:15:55,913 | DEBUG | D:\src\stable-diffusion-webui\setup.py | Running pip: install --upgrade invisible-watermark
