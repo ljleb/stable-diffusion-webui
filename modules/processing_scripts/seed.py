@@ -75,6 +75,9 @@ class ScriptSeed(scripts.ScriptBuiltinUI):
             p.seed_resize_from_w = seed_resize_from_w
             p.seed_resize_from_h = seed_resize_from_h
 
+    def before_hr(self, p, seed, seed_checkbox, subseed, subseed_strength, seed_resize_from_w, seed_resize_from_h):
+        p.seed_resize_from_w = seed_resize_from_w if seed_resize_from_w else p.width
+        p.seed_resize_from_h = seed_resize_from_h if seed_resize_from_h else p.height
 
 
 def connect_reuse_seed(seed: gr.Number, reuse_seed: gr.Button, generation_info: gr.Textbox, is_subseed):
